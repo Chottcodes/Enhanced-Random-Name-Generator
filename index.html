@@ -19,20 +19,22 @@
             <input type="range" min="1" max="5" value="3" class="slider" id="myRange">
             <h1 id="slider-Output"></h1>
             <button id="randomize-Group" class="bg-amber-50 text-black rounded-lg">Get randomized groups</button>
+            <button id="randomize-person-BTN" class="bg-amber-50 text-black rounded-lg">Get Random person</button>
         </div>
     </div>
-    <div class="h-[50%] w-[50%] hidden border border-white mt-5 m-auto ">
+    <div id="Student-list-container" class="h-[50%] w-[50%] relative border  border-white mt-5 m-auto ">
         <div class="w-full h-[10%] text-white text-2xl flex flex-col justify-center items-center gap-2">
             <h1>Student List</h1>
             <hr class="bg-white w-[40%]">
         </div>
-       <div class="h-[90%] w-full  flex justify-center overflow-y-auto">
+       <div class="h-[60%] w-full   flex justify-center overflow-y-auto">
         <ul id="ul" class="text-2xl w-[80%] text-white ">
         </ul>
        </div>
-    </div>
-    <div class="h-[50%] w-[50%] hidden border border-white mt-5 m-auto ">
-        
+       <div class=" w-full h-[30%] flex flex-col justify-center ">
+        <div class=" w-full h-[25%] flex justify-center text-white text-lg"><h1>Random Name</h1></div>
+        <div class=" w-full h-[75%] flex justify-center items-center  text-2xl text-white"><h1 id="person-name"></h1></div>
+       </div>
     </div>
     <div class=" w-full h-[20%] mt-3 text-white">
         <div class="w-full h-[30%]  text-3xl flex justify-center"><h1>Groups</h1></div>

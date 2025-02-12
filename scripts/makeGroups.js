@@ -2,11 +2,25 @@ const slider = document.getElementById("myRange");
 const sliderOutput = document.getElementById("slider-Output");
 const randomizeButton = document.getElementById("randomize-Group");
 const groupsContainer = document.getElementById("groups-Container");
+const randomPersonDiv = document.getElementById("random-person-Container");
+const randomPersonBTN=document.getElementById("randomize-person-BTN")
+const personNameText=document.getElementById("person-name")
 
 sliderOutput.innerHTML = slider.value;
 slider.oninput = () => {
   sliderOutput.innerHTML = slider.value;
 };
+randomPersonBTN.addEventListener("click",()=>{
+  const NameArr = getLocalStorage();
+  const namesRandom = getRandomName(NameArr)
+  personNameText.innerHTML=namesRandom;
+ 
+})
+const getRandomName=(names) => {
+  const randomIndex = Math.floor(Math.random() * names.length);
+  return names[randomIndex];
+}
+
 randomizeButton.addEventListener("click", () => {
   const sliderValue = slider.value;
   let createdGroups = createGroups(sliderValue);

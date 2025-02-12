@@ -581,6 +581,24 @@
   .end-2 {
     inset-inline-end: calc(var(--spacing) * 2);
   }
+  .top-1 {
+    top: calc(var(--spacing) * 1);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
+  .left-0\.5 {
+    left: calc(var(--spacing) * 0.5);
+  }
+  .left-5 {
+    left: calc(var(--spacing) * 5);
+  }
+  .left-\[25\%\] {
+    left: 25%;
+  }
+  .left-\[50\%\] {
+    left: 50%;
+  }
   .isolate {
     isolation: isolate;
   }
@@ -797,6 +815,9 @@
   .h-\[20\%\] {
     height: 20%;
   }
+  .h-\[25\%\] {
+    height: 25%;
+  }
   .h-\[30\%\] {
     height: 30%;
   }
@@ -809,8 +830,14 @@
   .h-\[60\%\] {
     height: 60%;
   }
+  .h-\[65\%\] {
+    height: 65%;
+  }
   .h-\[70\%\] {
     height: 70%;
+  }
+  .h-\[75\%\] {
+    height: 75%;
   }
   .h-\[80\%\] {
     height: 80%;
@@ -853,6 +880,9 @@
   }
   .w-\[80\%\] {
     width: 80%;
+  }
+  .w-\[100\%\] {
+    width: 100%;
   }
   .w-fit {
     width: fit-content;
@@ -1510,6 +1540,12 @@
   .bg-amber-50 {
     background-color: var(--color-amber-50);
   }
+  .bg-amber-50\/50 {
+    background-color: color-mix(in oklab, var(--color-amber-50) 50%, transparent);
+  }
+  .bg-amber-50\/60 {
+    background-color: color-mix(in oklab, var(--color-amber-50) 60%, transparent);
+  }
   .bg-amber-300 {
     background-color: var(--color-amber-300);
   }
@@ -1525,11 +1561,17 @@
   .bg-black {
     background-color: var(--color-black);
   }
+  .bg-blue-700 {
+    background-color: var(--color-blue-700);
+  }
   .bg-green-400 {
     background-color: var(--color-green-400);
   }
   .bg-pink-300 {
     background-color: var(--color-pink-300);
+  }
+  .bg-red-50 {
+    background-color: var(--color-red-50);
   }
   .bg-red-400 {
     background-color: var(--color-red-400);
@@ -1545,6 +1587,9 @@
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-yellow-300 {
+    background-color: var(--color-yellow-300);
   }
   .bg-yellow-400 {
     background-color: var(--color-yellow-400);
